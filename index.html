@@ -35,10 +35,10 @@
   <body>
     <header>
       <div class="inner">
-        <a href="http://echo-development.echobot.xyz/">
+        <a href="http://echo-policy.tk/">
           <h1>Echo Development</h1>
         </a>
-        <h2>Echo Development Team</h2>
+        <h2>Echo Development Policy's</h2>
         
         
       </div>
@@ -47,9 +47,32 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2 id="about-us">Coming Soon</h2>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for a policy" aria-label="Search"
+                    id="inputVal">
+                    
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn">Search</button>
+                
 
-<p<Our public policy page is coming soon.</p>
+
+                <script>
+                    $(document).ready(function () {
+    $('#btn').click( // if someone clicks the button
+        function () {
+            let bodyTxt = $("p").text() // Takes the paragraph text
+            let input = $("#inputVal").val() //Takes the textbox text
+            if (bodyTxt.includes(input)) { //checking if my paragraph text includes my search text
+
+                $("p:contains('" + input + "')").css("background-color", "yellow"); // error in this line. I want to set css properties for my searched text.
+            }
+            else {
+                alert("not found");
+            }
+        }
+    )
+});
+</script>
+          <h2 id="about-us">Coming Soon</h2>
+         <p<Our public policy page is coming soon.</p>
 
 
 
