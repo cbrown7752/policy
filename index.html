@@ -22,6 +22,26 @@
             </div>
         </div>
     </nav>
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn">Search</button>
+                
+
+
+                <script>
+                    $(document).ready(function () {
+    $('#btn').click( // if someone clicks the button
+        function () {
+            let bodyTxt = $("p").text() // Takes the paragraph text
+            let input = $("#inputVal").val() //Takes the textbox text
+            if (bodyTxt.includes(input)) { //checking if my paragraph text includes my search text
+
+                $("p:contains('" + input + "')").css("background-color", "yellow"); // error in this line. I want to set css properties for my searched text.
+            }
+            else {
+                alert("not found");
+            }
+        }
+    )
+});
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro">
             <div class="container">
