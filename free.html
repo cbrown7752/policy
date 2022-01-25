@@ -27,31 +27,6 @@
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro">
             <div class="container">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-                    id="inputVal">
-                    
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn">Search</button>
-                
-                
-
-
-                <script>
-                    $(document).ready(function () {
-    $('#btn').click( // if someone clicks the button
-        function () {
-            let bodyTxt = $("p").text() // Takes the paragraph text
-            let input = $("#inputVal").val() //Takes the textbox text
-            if (bodyTxt.includes(input)) { //checking if my paragraph text includes my search text
-
-                $("p:contains('" + input + "')").css("background-color", "yellow"); // error in this line. I want to set css properties for my searched text.
-            }
-            else {
-                alert("not found");
-            }
-        }
-    )
-});
-</script>
 <div class="OutlineElement Ltr  BCX0 SCXW180357542" style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; color: rgb(0, 0, 0); font-family: "Segoe UI", "Segoe UI Web", Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>
     <p class="Paragraph SCXW180357542 BCX0" style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; font-kerning: none; background-color: transparent; color: windowtext; text-align: center; text-indent: 0px;"><em>By using Echo, Echo development services you agree to this policy</em></p>
     <p class="Paragraph SCXW180357542 BCX0" style="margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-weight: normal; font-style: normal; vertical-align: baseline; font-kerning: none; background-color: transparent; color: windowtext; text-align: center; text-indent: 0px;"><u><strong>Violations of these policies will result in termination of services</strong></u></p>
